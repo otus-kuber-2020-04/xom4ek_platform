@@ -39,13 +39,21 @@ xom4ek Platform repository
  cd xom4ek_platform && \
  git checkout kubernetes-intro && \
  kubectl create -f kubernetes-intro/web-pod.yaml && \
- kubectl create -f kubernetes-intro/frontend-pod-healthy.yaml && \
- kubectl port-forward --address 0.0.0.0 pod/web 8000:8000
+ kubectl create -f kubernetes-intro/frontend-pod-healthy.yaml
  ```
 
 ## Как проверить работоспособность:
- - curl http://127.0.0.1:8000
- - :star: kubectl get pods -l run=frontend --field-selector=status.phase=Running
+
+ - Выполнить команды:
+  ```shell 
+  kubectl port-forward --address 0.0.0.0 pod/web 8000:8000 &
+  curl http://127.0.0.1:8000
+  ```
+
+ - :star: Выполнить команду:
+ ```shell 
+ kubectl get pods -l run=frontend --field-selector=status.phase=Running
+ ```
 
 ## PR checklist:
  - [x] Выставлен label с темой домашнего задания
