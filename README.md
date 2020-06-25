@@ -5,6 +5,18 @@ xom4ek Platform repository
 
 Пытаемся разобраться в работе k8s используя [Demo](https://github.com/GoogleCloudPlatform/microservices-demo)
 
+### 5. Kubernetes-volumes
+
+#### Задания:
+- Запусить statefulset c Minio
+- Запусить headless service c Minio
+- :star: Перенести ключи minio в secrets
+
+#### Полезные ссылки
+
+- [mc](https://github.com/minio/mc) or [here](https://docs.min.io/docs/minio-client-complete-guide.html)
+- [Описание выполненного ДЗ](kubernetes-volumes/README.md)
+
 ### 1. Kubernetes-intro
 
 #### Задания:
