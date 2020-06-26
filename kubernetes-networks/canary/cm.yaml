@@ -1,0 +1,46 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: bird
+data:
+  index.html: |
+    <body>
+    <html>
+    <pre>
+            .-"-.
+          /  - -\
+          \  @ @/
+            (_ <_)
+            _)(`
+        ,_(`_))\
+        "-\)__/
+          __|||__
+    jgs  ((__|__))
+    </pre>
+    </body>
+    </html>
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cat
+data:
+  index.html: |
+    <body>
+    <html>
+    <pre>
+                  / ,
+              /\  \|/  /\
+              |\\_;=._//|
+              \."   "./
+              //^\ /^\\
+        .'``",/ |0| |0| \,"``'.
+      /   ,  `'\.---./'`  ,   \
+      /`  /`\,."(     )".,/`\  `\
+      /`     ( '.'-.-'.' )     `\
+      /"`     "._  :  _."     `"\
+      `/.'`"=.,_``=``_,.="`'.\`
+    jgs          )   (
+    </pre>
+    </body>
+    </html>

@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sylvester
+spec:
+  selector:
+    app: sylvester
+  type: ClusterIP
+  clusterIP: None
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: tweety
+spec:
+  selector:
+    app: tweety
+  type: ClusterIP
+  clusterIP: None
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8000
