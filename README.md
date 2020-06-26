@@ -1,4 +1,5 @@
 # xom4ek_platform
+
 xom4ek Platform repository
 
 ## Краткое описание
@@ -8,6 +9,7 @@ xom4ek Platform repository
 ### 1. Kubernetes-intro
 
 #### Задания:
+
 - Разобрать механизм запуска подов в namespace kube-system при использовании kubeadm
 - Написать Dockerfile и собрать image с вебсервером
 - Написать манифест для запуска контейнера в Pod'e
@@ -43,3 +45,51 @@ xom4ek Platform repository
 - [Node-exporter](https://github.com/prometheus/node_exporter)
 - [Taints and Toleration](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/#concepts)
 - [Описание выполненного ДЗ](kubernetes-controllers/README.md)
+
+### 3. Kubernetes-security
+
+#### Задания:
+
+##### task01
+- Создать Service Account bob, дать ему роль admin в рамках всего кластера
+- Создать Service Account dave без доступа к кластеру
+
+###### taks02
+- Создать Namespace prometheus
+- Создать Service Account carol в этом Namespace
+- Дать всем Service Account в Namespace prometheus возможность делать get, list, watch в отношении Pods всего кластера
+
+###### task03
+- Создать Namespace dev
+- Создать Service Account jane в Namespace dev
+- Дать jane роль admin в рамках Namespace dev
+- Создать Service Account ken в Namespace dev
+- Дать ken роль view в рамках Namespace dev
+
+#### Полезные ссылки
+
+- [ServiceAccountsForPods](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)
+- [RBAC](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
+- [kubectl auth can-i](https://kubernetes.io/docs/reference/access-authn-authz/authorization/)
+- [Описание выполненного ДЗ](kubernetes-security/README.md)
+
+### 4. Kubernetes-networks
+
+#### Задания:
+- Добавлены и изучены механизмы liveness и readiness probe
+- Добавлены и изучены механизмы liveness и readiness probe
+- Создали несколько типов services
+- Установлен MetalLB / Ingress / законфигурирован minikube длля использования IPVS
+- :star: Сделан сервис LoadBalancer , который откроет доступ к CoreDNS снаружи кластера
+- Создан service с внешним IP выданным MetalLB для использования под ingress + headless services
+- :star: Создан ingress для kubernetes dashobard для доступа за /dashbaord
+- :star: Создан ingress с конфигурацией под канареечное развертывание
+
+#### Полезные ссылки
+- [svc and iptables](https://msazure.club/kubernetes-services-and-iptables/)
+- [ipvs k8s](https://github.com/kubernetes/kubernetes/blob/master/pkg/proxy/ipvs/README.md)
+- [strictARP issue](https://github.com/metallb/metallb/issues/153)
+- [Balancing types](https://github.com/kubernetes/kubernetes/blob/1cb3b5807ec37490b4582f22d991c043cc468195/pkg/proxy/apis/config/types.go) и [another](http://www.linuxvirtualserver.org/docs/scheduling.html)
+- [Metallb](https://metallb.universe.tf/)
+- [Ingress-nginx](https://kubernetes.github.io/ingress-nginx/deploy/)
+- [Описание выполненного ДЗ](kubernetes-networks/README.md)

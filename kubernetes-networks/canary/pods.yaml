@@ -1,0 +1,51 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tweety
+  labels:
+    app: tweety
+spec:
+  containers:
+    - name: tweety
+      image: registry.hub.docker.com/xom4ek/web:kubernetes-intro
+      resources: {}
+      readinessProbe:
+        httpGet:
+          path: /index.html
+          port: 8000
+      livenessProbe:
+        tcpSocket:
+          port: 8000
+      volumeMounts:
+      - name: app
+        mountPath: /app
+  volumes:
+  - name: app
+    configMap:
+        name: bird
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sylvester
+  labels:
+    app: sylvester
+spec:
+  containers:
+    - name: sylvester
+      image: registry.hub.docker.com/xom4ek/web:kubernetes-intro
+      resources: {}
+      readinessProbe:
+        httpGet:
+          path: /index.html
+          port: 8000
+      livenessProbe:
+        tcpSocket:
+          port: 8000
+      volumeMounts:
+      - name: app
+        mountPath: /app
+  volumes:
+  - name: app
+    configMap:
+        name: cat
