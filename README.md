@@ -6,17 +6,22 @@ xom4ek Platform repository
 
 Пытаемся разобраться в работе k8s используя [Demo](https://github.com/GoogleCloudPlatform/microservices-demo)
 
-### 5. Kubernetes-volumes
+### 6. Kubernetes-templating
 
 #### Задания:
-- Запусить statefulset c Minio
-- Запусить headless service c Minio
-- :star: Перенести ключи minio в secrets
+- Установить harbor
+- Установить nginx-ingress
+- Установить cert-manager
+- Установить chartmuseum
+- Создать свой chart
+- Использовать jsonnet
+- Использовать kustomize
 
 #### Полезные ссылки
 
-- [mc](https://github.com/minio/mc) or [here](https://docs.min.io/docs/minio-client-complete-guide.html)
-- [Описание выполненного ДЗ](kubernetes-volumes/README.md)
+- [cert-manager](https://cert-manager.io)
+- [helm](https://helm.sh)
+- [Описание выполненного ДЗ](kubernetes-templating/README.md)
 
 ### 1. Kubernetes-intro
 
@@ -105,3 +110,15 @@ xom4ek Platform repository
 - [Metallb](https://metallb.universe.tf/)
 - [Ingress-nginx](https://kubernetes.github.io/ingress-nginx/deploy/)
 - [Описание выполненного ДЗ](kubernetes-networks/README.md)
+
+### 5. Kubernetes-volumes
+
+#### Задания:
+- Запусить statefulset c Minio
+- Запусить headless service c Minio
+- :star: Перенести ключи minio в secrets
+
+#### Полезные ссылки
+
+- [mc](https://github.com/minio/mc) or [here](https://docs.min.io/docs/minio-client-complete-guide.html)
+- [Описание выполненного ДЗ](kubernetes-volumes/README.md)
