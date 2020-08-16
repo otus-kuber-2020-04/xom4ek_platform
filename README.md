@@ -6,16 +6,20 @@ xom4ek Platform repository
 
 Пытаемся разобраться в работе k8s используя [Demo](https://github.com/GoogleCloudPlatform/microservices-demo)
 
-### 8. Kubernetes-monitoring
+### 9. Kubernetes-logging
 
 #### Задания:
-- Установить nginx c nginx-exporter
-- Установить prometheus-operator
+- Установить EFK stack
+- Создать dashboard в kibana
+- Установить Loki
+- Создать dashboard в grafana
 
 #### Полезные ссылки
 
-- [prometheus-operator](https://github.com/prometheus-operator/prometheus-operator#:~:text=Overview,monitoring%20stack%20for%20Kubernetes%20clusters.)
-- [Описание выполненного ДЗ](kubernetes-monitoring/README.md)
+- [loki](https://grafana.com/oss/loki/)
+- [fluent-bit](https://fluentbit.io/)
+- [elastic](https://www.elastic.co/)
+- [Описание выполненного ДЗ](kubernetes-logging/README.md)
 
 ### 1. Kubernetes-intro
 
@@ -145,3 +149,14 @@ xom4ek Platform repository
 
 - [cr](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/)
 - [Описание выполненного ДЗ](kubernetes-operators/README.md)
+
+### 8. Kubernetes-monitoring
+
+#### Задания:
+- Установить nginx c nginx-exporter
+- Установить prometheus-operator
+
+#### Полезные ссылки
+
+- [prometheus-operator](https://github.com/prometheus-operator/prometheus-operator#:~:text=Overview,monitoring%20stack%20for%20Kubernetes%20clusters.)
+- [Описание выполненного ДЗ](kubernetes-monitoring/README.md)
