@@ -6,22 +6,17 @@ xom4ek Platform repository
 
 Пытаемся разобраться в работе k8s используя [Demo](https://github.com/GoogleCloudPlatform/microservices-demo)
 
-### 6. Kubernetes-templating
+### 7. Kubernetes-operators
 
 #### Задания:
-- Установить harbor
-- Установить nginx-ingress
-- Установить cert-manager
-- Установить chartmuseum
-- Создать свой chart
-- Использовать jsonnet
-- Использовать kustomize
+- Создать cr для mysql
+- Отредактировать crd добавив requirements
+- Проверить работу backup job
 
 #### Полезные ссылки
 
-- [cert-manager](https://cert-manager.io)
-- [helm](https://helm.sh)
-- [Описание выполненного ДЗ](kubernetes-templating/README.md)
+- [cr](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/)
+- [Описание выполненного ДЗ](kubernetes-operators/README.md)
 
 ### 1. Kubernetes-intro
 
@@ -122,3 +117,20 @@ xom4ek Platform repository
 
 - [mc](https://github.com/minio/mc) or [here](https://docs.min.io/docs/minio-client-complete-guide.html)
 - [Описание выполненного ДЗ](kubernetes-volumes/README.md)
+
+### 6. Kubernetes-templating
+
+#### Задания:
+- Установить harbor
+- Установить nginx-ingress
+- Установить cert-manager
+- Установить chartmuseum
+- Создать свой chart
+- Использовать jsonnet
+- Использовать kustomize
+
+#### Полезные ссылки
+
+- [cert-manager](https://cert-manager.io)
+- [helm](https://helm.sh)
+- [Описание выполненного ДЗ](kubernetes-templating/README.md)
