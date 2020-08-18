@@ -17,6 +17,7 @@ xom4ek Platform repository
 - [prometheus-operator](https://github.com/prometheus-operator/prometheus-operator#:~:text=Overview,monitoring%20stack%20for%20Kubernetes%20clusters.)
 - [Описание выполненного ДЗ](kubernetes-monitoring/README.md)
 
+
 ### 1. Kubernetes-intro
 
 #### Задания:
