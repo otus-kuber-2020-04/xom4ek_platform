@@ -6,17 +6,17 @@ xom4ek Platform repository
 
 Пытаемся разобраться в работе k8s используя [Demo](https://github.com/GoogleCloudPlatform/microservices-demo)
 
-### 7. Kubernetes-operators
+### 8. Kubernetes-monitoring
 
 #### Задания:
-- Создать cr для mysql
-- Отредактировать crd добавив requirements
-- Проверить работу backup job
+- Установить nginx c nginx-exporter
+- Установить prometheus-operator
 
 #### Полезные ссылки
 
-- [cr](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/)
-- [Описание выполненного ДЗ](kubernetes-operators/README.md)
+- [prometheus-operator](https://github.com/prometheus-operator/prometheus-operator#:~:text=Overview,monitoring%20stack%20for%20Kubernetes%20clusters.)
+- [Описание выполненного ДЗ](kubernetes-monitoring/README.md)
+
 
 ### 1. Kubernetes-intro
 
@@ -134,3 +134,15 @@ xom4ek Platform repository
 - [cert-manager](https://cert-manager.io)
 - [helm](https://helm.sh)
 - [Описание выполненного ДЗ](kubernetes-templating/README.md)
+
+### 7. Kubernetes-operators
+
+#### Задания:
+- Создать cr для mysql
+- Отредактировать crd добавив requirements
+- Проверить работу backup job
+
+#### Полезные ссылки
+
+- [cr](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/)
+- [Описание выполненного ДЗ](kubernetes-operators/README.md)
